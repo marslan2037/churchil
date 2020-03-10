@@ -1,0 +1,115 @@
+/* ======= TESTIMONIALS ======= */
+#c_testimonials {
+  overflow: hidden;
+  margin-bottom: 163px;
+  .c_row {
+    .c_col.c_col_4 {
+      margin-bottom: 30px;
+      border: 2px solid $snuff-approx;
+      text-align: center;
+      min-height: 753px;
+      position: relative;
+      .c_test_arrow {
+        position: absolute;
+        background: url(../images/client-arrow.png) no-repeat;
+        top: 142px;
+        left: 50%;
+        width: 28px;
+        height: 8px;
+        margin-left: -14px;
+        background-size: 28px 9px;
+      }
+      .c_img {
+        width: 346px;
+        height: 144px;
+        margin-bottom: 41px;
+
+        img {
+          width: 346px;
+          height: 144px;
+          border-bottom: 2px solid $snuff-approx;
+        }
+      }
+      p {
+        color: $storm-gray;
+        font-size: 16px;
+        line-height: 26px;
+        font-family: 'interstate-light';
+        padding: 0 17px 34px 15px;
+        margin: 0;
+      }
+      span {
+        font-family: 'interstate-regular';
+        color: $storm-gray;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+#c_clients {
+  .c_container {
+    width: 1130px;
+  }
+
+  .c_clients_list {
+    margin-bottom: 141px;
+    overflow: hidden;
+    text-align: center;
+    .c_row {
+      .c_clients_item.c_col.c_col_3 {
+        width: 255px;
+        height: 239px;
+        margin-bottom: 30px;
+        float: none;
+        display: inline-block;
+        a {
+          img {
+            width: 251px;
+            height: 235px;
+            border: 2px solid $snuff-approx;
+            &:hover {
+              border: 2px solid $teen-blue;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.c_clients_cat {
+  border-bottom: 1px solid $crispy-white;
+  margin-bottom: 72px;
+  text-align: center;
+  padding-bottom: 28px;
+  ul {
+    li {
+      display: inline;
+
+      &:before {
+        display: none;
+      }
+      &.current_menu_item {
+        a {
+          border-bottom: 2px solid $teen-blue;
+          padding-bottom: 33px;
+          color: $teen-blue;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $storm-gray;
+        font-size: 18px;
+        font-family: 'interstate-regular';
+        text-transform: capitalize;
+        &:hover {
+          color: $teen-blue;
+          border-bottom: 2px solid $teen-blue;
+          padding-bottom: 33px;
+        }
+      }
+    }
+  }
+}

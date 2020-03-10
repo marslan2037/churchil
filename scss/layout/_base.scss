@@ -1,0 +1,156 @@
+/* ======== BASE ======== */
+.c_container {
+  width: $container_w;
+  margin: 0 auto;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.c_row .c_col:first-child {
+  margin-left: 0;
+}
+
+.c_col {
+  width: 100%;
+  float: left;
+  margin-left: $gutter_w;
+}
+
+.c_col_1 {
+  width: $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_2 {
+  width: ($colgut_w * 1) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_3 {
+  width: ($colgut_w * 2) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_4 {
+  width: ($colgut_w * 3) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_5 {
+  width: ($colgut_w * 4) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_6 {
+  width: ($colgut_w * 5) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_7 {
+  width: ($colgut_w * 6) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_8 {
+  width: ($colgut_w * 7) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_9 {
+  width: ($colgut_w * 8) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_10 {
+  width: ($colgut_w * 9) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_11 {
+  width: ($colgut_w * 10) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+.c_col_12 {
+  width: ($colgut_w * 11) + $col_w;
+  @include media('>=phone', '<=desktop') {
+    width: 100%;
+  }
+}
+
+/* ======== c_content_home ======== */
+
+#c_content.c_content_home .c_container {
+  text-align: center;
+  padding: 0 155px 80px;
+  h5 {
+    font-size: 22px;
+    color: $endeavour;
+    text-transform: uppercase;
+    font-family: 'montserrat-light';
+    font-weight: 300;
+    margin-bottom: 77px;
+    letter-spacing: $letter_s;
+  }
+  p {
+    font-size: 24px;
+    line-height: 33px;
+    font-family: 'interstate-light';
+    font-weight: 300;
+    margin-bottom: 57px;
+  }
+}
+
+.c_page_intro .c_container {
+  text-align: center;
+  padding: 0 150px 81px;
+  h5 {
+    font-size: 22px;
+    color: $endeavour;
+    text-transform: uppercase;
+    font-family: 'montserrat-light';
+    font-weight: 300;
+    margin-bottom: 33px;
+    letter-spacing: $letter_s;
+  }
+  p {
+    font-size: 24px;
+    line-height: 33px;
+    font-family: 'interstate-light';
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+}
+
+.c_page_intro_testimonials .c_container {
+  padding-bottom: 0;
+  p{
+    margin-bottom: 67px;
+  }
+}
+
+

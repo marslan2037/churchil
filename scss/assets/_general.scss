@@ -1,0 +1,281 @@
+@font-face {
+	font-family: 'montserrat-regular';
+	src: url('../fonts/montserrat-regular-webfont.eot');
+	src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+	url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+	url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+	url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+}
+
+@font-face {
+	font-family: 'montserrat-light';
+	src: url('../fonts/montserrat-light-webfont.eot');
+	src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+	url('../fonts/montserrat-light-webfont.woff') format('woff'),
+	url('../fonts/montserrat-light-webfont.ttf') format('truetype'),
+	url('../fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
+}
+
+@font-face {
+	font-family: 'interstate-regular';
+	src: url('../fonts/interstate-regular-webfont.eot');
+	src: url('../fonts/interstate-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/interstate-regular-webfont.woff2') format('woff2'),
+	url('../fonts/interstate-regular-webfont.woff') format('woff'),
+	url('../fonts/interstate-regular-webfont.ttf') format('truetype'),
+	url('../fonts/interstate-regular-webfont.svg#interstateitalic') format('svg');
+}
+
+@font-face {
+	font-family: 'interstate-light';
+	src: url('../fonts/interstate-light-webfont.eot');
+	src: url('../fonts/interstate-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/interstate-light-webfont.woff2') format('woff2'),
+	url('../fonts/interstate-light-webfont.woff') format('woff'),
+	url('../fonts/interstate-light-webfont.ttf') format('truetype'),
+	url('../fonts/interstate-light-webfont.svg#interstatebold') format('svg');
+}
+
+@font-face {
+	font-family: 'interstate-bold';
+	src: url('../fonts/interstate-bold-webfont.eot');
+	src: url('../fonts/interstate-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/interstate-bold-webfont.woff2') format('woff2'),
+	url('../fonts/interstate-bold-webfont.woff') format('woff'),
+	url('../fonts/interstate-bold-webfont.ttf') format('truetype'),
+	url('../fonts/interstate-bold-webfont.svg#interstateregular') format('svg');
+}
+
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+	margin: 0 ;
+	padding: 0;
+	font-size: 24px;
+	overflow-x: hidden;
+}
+h1 {
+	font-size: 70px;
+	font-family: 'interstate-regular';
+	font-weight: 400;
+}
+h2 {
+	font-size: 37px;
+	font-family: 'interstate-light';
+	font-weight: 300;
+	color:$teen-blue;
+}
+h3 {
+	font-size: 28px;
+	font-family: 'interstate-regular';
+	font-weight: 400;
+}
+h4 {
+	font-size: 26px;
+	font-family: 'interstate-regular';
+	font-weight: 400;
+}
+h5{
+	font-size: 22px;
+	font-family: 'montserrat-light';
+	font-weight: 300;
+}
+h6{
+	font-size: 20px;
+	font-family: 'interstate-regular';
+	font-weight: 400;
+	color: $endeavour;
+	margin-bottom: 10px;
+}
+hr{
+	border: 1px solid $crispy_white;
+}
+p {
+	margin-bottom: 45px;
+	line-height: 33px;
+	color: $storm-gray;
+	font-family: 'interstate-light';
+	font-weight: 300;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		font-family: 'interstate-light';
+		font-weight: 300;
+		margin-bottom: 35px;
+		line-height: 33px;
+		color: $storm-gray;
+		padding-left: 25px;
+		position: relative;
+		&:before{
+			content: url(../images/bullet.png);
+			position: absolute;
+			left: 0;
+		}
+	}
+}
+ol {
+	margin:0;
+	counter-reset: i;
+	position: relative;
+	li {
+		font-family: 'interstate-light';
+		font-weight: 300;
+		color: $storm-gray;
+		list-style-type: none;
+		line-height: 33px;
+		margin-bottom: 35px;
+		padding-left: 25px;
+		position: relative;
+		&:before{
+			content: " ";
+			counter-increment: i ;
+			content: counter(i) "." ;
+			position:absolute;
+			left: 0;
+			color: $endeavour;
+		}
+	}
+}
+
+
+a{
+	text-decoration: underline;
+	color: $cyan;
+	font-family: 'interstate-light';
+	color:$teen-blue;
+	&:hover{
+		text-decoration:none;
+	}
+}
+
+input[type=text], input[type=email], input[type=number], input[type=password] {
+	background-color: #fff;
+	border: 2px solid $snuff;
+	border-radius: 50px;
+	padding: 10px 20px 10px 20px;
+	font-size: 24px;
+	width: 100%;
+	color: $ocean-boat-blue;
+	margin-bottom: 5px;
+}
+
+input[type=tel] {
+	background-color: #fff;
+	border: 2px solid $snuff;
+	border-radius: 50px;
+	padding: 10px 20px 10px 20px;
+	font-size: 24px;
+	width: 100%;
+	color: $ocean-boat-blue;
+	margin-bottom: 5px;
+}
+
+blockquote {
+	background-color: #fff;
+	margin-bottom: 15px;
+	border-left: 4px solid $capri;
+	padding: 5px 10px 5px 30px;
+	font-size: 24px;
+	font-family: 'interstate-light';
+	line-height: 35px;
+	margin-left: 25px;
+	color: $storm-gray;
+	margin-bottom: 40px;
+	font-style: italic; 
+}
+
+.cForm-wrap {
+	border: 2px solid $snuff;
+	border-radius: 50px;
+	//padding: 10px 20px 10px 20px;
+	font-size: 24px;
+	width: 100%;
+	color: $ocean-boat-blue;
+	margin-bottom: 5px;
+	position: relative;
+	&:before{
+		content: '\f078';
+		font-family: FontAwesome;
+		position: absolute;
+		right: 0;
+		border-left: 2px solid $snuff;
+		width: 50px;
+		line-height: 49px;
+		text-align: center;
+	}
+	select{
+		z-index: 1000;
+		width: 100%;
+		padding: 10px 20px 10px 20px;
+	}
+	span{
+		position: absolute;
+		left: 20px;
+		font-family: Arial;
+		z-index: -9;
+		line-height: 49px;
+	}
+
+}
+textarea {
+	border: 1px solid $snuff;
+	width: 100%;
+	font-size: 24px;
+	padding: 10px 20px 10px 20px;
+	resize: none;
+	color: $ocean-boat-blue;
+}
+.c_btn_blue,
+input[type="submit"],
+button {
+	border-radius: 50px;
+	padding: 0 30px;
+	background-color: $capri;
+	font-size: 16px;
+	color: $white;
+	line-height: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid $capri;
+	letter-spacing: $letter_s;
+	text-transform: uppercase;
+	font-family: 'montserrat-light';
+	&:hover {
+		background-color: $white;
+		color: $capri;
+		border: 2px solid $capri;
+		text-decoration: none;
+	}
+}
+
+.c_btn_white
+ {
+	border-radius: 50px;
+	padding: 0 30px;
+	font-size: 16px;
+	color: $pitch-blue;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 50px;
+	cursor: pointer;
+	border: 2px solid $capri;
+	letter-spacing: $letter_s;
+	text-transform: uppercase;
+	font-family: 'montserrat-light';
+	margin-bottom: 25px;
+	&:hover {
+		background-color: $capri;
+		color: $white;
+		border: 2px solid $capri;
+		text-decoration: none;
+	}
+}
+
+

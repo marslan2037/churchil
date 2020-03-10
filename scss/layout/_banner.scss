@@ -1,0 +1,32 @@
+/* ======= BANNER ======= */
+
+#c_banner {
+  max-width: 2000px;
+  position: relative;
+  margin-bottom: 105px;
+  .c_banner_img{
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  .c_banner_overlay {
+    max-width: 2000px;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+  }
+  .c_container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .c_col_8 {
+      color: #fff;
+      h2 {
+        background: url("../images/heading-bullet.png") no-repeat left 0;
+        background-size: 26px auto;
+        padding-left: 56px;
+        margin-top: 40px;
+        font-size: 36px;
+      }
+    }
+  }
+}

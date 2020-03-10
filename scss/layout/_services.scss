@@ -1,0 +1,233 @@
+/* ======= SERVICES ======= */
+#c_services {
+   padding: 120px 0 115px;
+   box-shadow:inset 0px 0 228px 0px #0b4b8d;
+   height: auto;
+   overflow: hidden;
+   color: $white;
+   text-align: center;
+   position: relative;
+   background: url(../images/services-bg.png) , -webkit-linear-gradient($cerulean, $endeavour); /* For Safari 5.1 to 6.0 */
+   background: url(../images/services-bg.png) ,-o-linear-gradient($cerulean, $endeavour); /* For Opera 11.1 to 12.0 */
+   background: url(../images/services-bg.png) ,-moz-linear-gradient($cerulean, $endeavour); /* For Firefox 3.6 to 15 */
+   background: url(../images/services-bg.png) ,linear-gradient($cerulean, $endeavour);  /* Standard syntax */
+
+  /* Tablet */
+  @include media('>=tablet', '<=desktop' ) {
+    padding-top: 86px;
+    padding-bottom: 46px;
+    background: url(../images/services-bg.png) ,linear-gradient($cerulean, $endeavour);  /* Standard syntax */
+  }
+
+  /* Mobile */
+  @include media('>=phone', '<tablet' ) {
+    padding-top: 86px;
+    padding-bottom: 46px;
+    background: url(../images/services-bg.png) ,linear-gradient($cerulean, $endeavour);  /* Standard syntax */
+  }
+	.c_services_overlay-left {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+      /* Tablet */
+      @include media('>=tablet', '<=desktop' ) {
+        display: none;
+      }
+
+      /* Mobile */
+      @include media('>=phone', '<tablet' ) {
+        display: none;
+      }
+      
+	}
+	.c_services_overlay-right {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+      /* Tablet */
+      @include media('>=tablet', '<=desktop' ) {
+        display: none;
+      }
+
+      /* Mobile */
+      @include media('>=phone', '<tablet' ) {
+        display: none;
+      }
+	}
+   h5 {
+   	margin-bottom: 88px;
+   	text-align: center;
+   	color: $endeavour;
+   	font-weight: 300;
+    letter-spacing: 5px;
+
+     /* Tablet */
+     @include media('>=tablet', '<=desktop' ) {
+       margin-bottom: 43px;
+     }
+
+     /* Mobile */
+     @include media('>=phone', '<tablet' ) {
+       margin-bottom: 39px;
+     }
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 5px;
+    font-family: 'montserrat-light';
+  }
+  .c_row {
+    overflow: hidden;
+
+    @include media('>=phone', '<tablet' ) {
+      .c_col.c_col_4
+      {
+        padding: 0;
+      }
+    }
+    &:first-child {
+     margin-bottom: 75px;
+      /* Tablet */
+      @include media ('>=tablet','<=desktop')
+      {
+        margin-bottom: 0;
+      }
+      /* Mobile */
+      @include media ('>=phone','<tablet')
+      {
+        margin-bottom: 0;
+      }
+   }
+   &:last-child {
+     margin-bottom: 136px;
+     padding: 0 190px;
+     /* Tablet */
+     @include media('>=tablet', '<=desktop' ) {
+       padding-left: 0;
+       padding-right: 0;
+       margin-bottom: 0;
+     }
+
+     /* Mobile */
+     @include media('>=phone', '<tablet' ) {
+       padding-left: 0;
+       padding-right: 0;
+       margin-bottom: 0;
+     }
+   }
+   p {
+   	font-size: 16px;
+   	line-height: 22px;
+    color: $white;
+    text-align: center
+  }
+  .c_services_heading {
+    overflow: hidden;
+    margin: 0 0 20px;
+    display: table;
+    /* Tablet */
+    @include media('>=tablet', '<=desktop' ) {
+      display: inherit;
+    }
+    /* Mobile */
+    @include media('>=phone', '<tablet' ) {
+      display: inherit;
+    }
+    img {
+     float: left;
+     margin: 0 10px 0 30px;
+     width: 111px;
+     height: 107px;
+
+      /* Tablet */
+      @include media('>=tablet', '<=desktop' ) {
+        float: none;
+        margin: 0;
+      }
+
+      /* Mobile */
+      @include media('>=phone', '<tablet' ) {
+        float: none;
+        margin: 0;
+      }
+      
+   }
+   h3 {
+     text-align: left;
+     font-family: 'interstate-bold';
+     display: table-cell;
+     vertical-align: middle;
+
+     /* Tablet */
+     @include media('>=tablet', '<=desktop' ) {
+       display: inherit;
+       text-align: center;
+       width: 100%;
+       padding:0 41px;
+     }
+
+     /* Mobile */
+     @include media('>=phone', '<tablet' ) {
+       display: inherit;
+       text-align: center;
+       width: 100%;
+       padding:0 10px;
+     }
+   }
+ }
+
+ .c_col.c_col_4 {
+  padding: 0 8px;
+}
+
+}
+}
+/* Tablet */
+@include media('>=tablet', '<=desktop' ) {
+  .c_services_wrapper
+  {
+    .c_row {
+      padding: 0;
+      .c_col {
+        width: 50%;
+        margin-left: 0;
+        &:nth-child(3)
+        {
+          padding: 0 174px !important;
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+/* Mobile */
+@include media('>=phone', '<tablet' ) {
+  .c_services_wrapper
+  {
+    .c_row {
+      padding: 0;
+      .c_col {
+        margin-left: 0;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+@include media ('>=phone','<tablet')
+{
+  .c_services_content
+  {
+    p
+    {
+      margin-bottom: 34px;
+    }
+  }
+}

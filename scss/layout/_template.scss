@@ -1,0 +1,61 @@
+/* ======= TEMPLATE ======= */
+#c_grey {
+	background: $alabaster;
+	padding: 114px 0;
+	h5 {
+		text-align: center;
+		margin-bottom: 73px;
+		color: $endeavour;
+		letter-spacing: $letter_s;
+
+	}
+	li {
+		font-size: 24px;
+		padding-left: 37px;
+	}
+}
+
+#c_blue {
+  overflow: hidden;
+  background: $endeavour;
+  padding: 114px 0 17px;
+  color: $white;
+  h5 {
+    margin-bottom: 106px;
+    text-align: center;
+    letter-spacing: $letter_s;
+  }
+  .content-column {
+    h3 {
+      font-family: 'interstate-bold';
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 24px;
+      font-family: 'interstate-light';
+      color: $white;
+    }
+  }
+}
+
+.c_inner_temp_form {
+  padding: 100px 0;
+  h5 {
+    color: $unknown-blue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+  .c_btn_white {
+    margin-right: 10px;
+  }
+  input[type=text], .cForm-wrap{
+    margin-bottom: 28px;
+    margin-left: 10px;
+    width: 300px;
+    float: left;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}

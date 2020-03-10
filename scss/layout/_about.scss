@@ -1,0 +1,63 @@
+/* Templete */
+
+#c_vision {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 144px;
+  padding-top: 118px;
+  background: linear-gradient(to right, $soapstone 50%, $spring-wood 50%);
+  .c_container {
+    .c_col_6 {
+      h5 {
+        color: $endeavour;
+        font-weight: 300;
+        letter-spacing: $letter_s;
+        margin-bottom: 41px;
+      }
+    }
+  }
+}
+
+#c_employee_intro {
+  background: url(../images/services-bg.png), $resolution-blue;
+  padding: 86px 0 52px;
+  margin: 0 0 109px 0;
+  text-align: center;
+  color: $white;
+  #c_intro {
+    h5 {
+      margin-bottom: 43px;
+    }
+    p {
+      color: $white;
+      font-size: 24px;
+      margin-bottom: 115px;
+    }
+  }
+  .c_employee_cat {
+    margin-bottom: 22px;
+    h5 {
+      margin-bottom: 64px;
+      text-transform: uppercase;
+    }
+    article {
+      display: inline-block;
+      margin: 0 0 57px;
+      a {
+        text-decoration: none;
+      }
+      span.c_emp_name {
+        font-size: 24px;
+        display: block;
+        color: $white;
+        margin-bottom: 7px;
+      }
+      span.c_emp_desig {
+        font-size: 17px;
+        display: block;
+        color: $white;
+
+      }
+    }
+  }
+}
